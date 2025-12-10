@@ -115,7 +115,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
-                        android:id="@+id/op50ml"
+                        android:id="@+id/op300ml"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:background="?attr/selectableItemBackground"
@@ -136,13 +136,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="50 ml"
+                            android:text="300 ml"
                             android:textColor="@color/colorBlack" />
                 </LinearLayout>
 
                 <View
                         style="@style/DividerVertical"
-                        app:layout_constraintStart_toEndOf="@id/op50ml"
+                        app:layout_constraintStart_toEndOf="@id/op300ml"
                         app:layout_constraintTop_toBottomOf="parent" />
 
                 <View
@@ -160,7 +160,7 @@
                         android:orientation="vertical"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/op150ml"
-                        app:layout_constraintStart_toEndOf="@+id/op50ml"
+                        app:layout_constraintStart_toEndOf="@+id/op300ml"
                         app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView

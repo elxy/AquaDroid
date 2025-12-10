@@ -114,7 +114,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 selectedOption = null
                 tvCustom.text = "Custom"
-                op50ml.background = getDrawable(outValue.resourceId)
+                op300ml.background = getDrawable(outValue.resourceId)
                 op100ml.background = getDrawable(outValue.resourceId)
                 op150ml.background = getDrawable(outValue.resourceId)
                 op200ml.background = getDrawable(outValue.resourceId)
@@ -155,12 +155,12 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        op50ml.setOnClickListener {
+        op300ml.setOnClickListener {
             if (snackbar != null) {
                 snackbar?.dismiss()
             }
-            selectedOption = 50
-            op50ml.background = getDrawable(R.drawable.option_select_bg)
+            selectedOption = 300
+            op300ml.background = getDrawable(R.drawable.option_select_bg)
             op100ml.background = getDrawable(outValue.resourceId)
             op150ml.background = getDrawable(outValue.resourceId)
             op200ml.background = getDrawable(outValue.resourceId)
@@ -174,7 +174,7 @@ class MainActivity : AppCompatActivity() {
                 snackbar?.dismiss()
             }
             selectedOption = 100
-            op50ml.background = getDrawable(outValue.resourceId)
+            op300ml.background = getDrawable(outValue.resourceId)
             op100ml.background = getDrawable(R.drawable.option_select_bg)
             op150ml.background = getDrawable(outValue.resourceId)
             op200ml.background = getDrawable(outValue.resourceId)
@@ -188,7 +188,7 @@ class MainActivity : AppCompatActivity() {
                 snackbar?.dismiss()
             }
             selectedOption = 150
-            op50ml.background = getDrawable(outValue.resourceId)
+            op300ml.background = getDrawable(outValue.resourceId)
             op100ml.background = getDrawable(outValue.resourceId)
             op150ml.background = getDrawable(R.drawable.option_select_bg)
             op200ml.background = getDrawable(outValue.resourceId)
@@ -202,7 +202,7 @@ class MainActivity : AppCompatActivity() {
                 snackbar?.dismiss()
             }
             selectedOption = 200
-            op50ml.background = getDrawable(outValue.resourceId)
+            op300ml.background = getDrawable(outValue.resourceId)
             op100ml.background = getDrawable(outValue.resourceId)
             op150ml.background = getDrawable(outValue.resourceId)
             op200ml.background = getDrawable(R.drawable.option_select_bg)
@@ -216,7 +216,7 @@ class MainActivity : AppCompatActivity() {
                 snackbar?.dismiss()
             }
             selectedOption = 250
-            op50ml.background = getDrawable(outValue.resourceId)
+            op300ml.background = getDrawable(outValue.resourceId)
             op100ml.background = getDrawable(outValue.resourceId)
             op150ml.background = getDrawable(outValue.resourceId)
             op200ml.background = getDrawable(outValue.resourceId)
@@ -252,7 +252,7 @@ class MainActivity : AppCompatActivity() {
             val alertDialog = alertDialogBuilder.create()
             alertDialog.show()
 
-            op50ml.background = getDrawable(outValue.resourceId)
+            op300ml.background = getDrawable(outValue.resourceId)
             op100ml.background = getDrawable(outValue.resourceId)
             op150ml.background = getDrawable(outValue.resourceId)
             op200ml.background = getDrawable(outValue.resourceId)
