@@ -28,7 +28,7 @@ class AlarmHelper {
             context,
             0,
             alarmIntent,
-            PendingIntent.FLAG_UPDATE_CURRENT
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
 
         Log.i("AlarmHelper", "Setting Alarm Interval to: $notificationFrequency minutes")
@@ -59,7 +59,7 @@ class AlarmHelper {
             context,
             0,
             alarmIntent,
-            PendingIntent.FLAG_UPDATE_CURRENT
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
         alarmManager!!.cancel(pendingAlarmIntent)
 
@@ -82,7 +82,7 @@ class AlarmHelper {
         return PendingIntent.getBroadcast(
             context, 0,
             alarmIntent,
-            PendingIntent.FLAG_NO_CREATE
+            PendingIntent.FLAG_NO_CREATE or PendingIntent.FLAG_IMMUTABLE
         ) != null
     }
 }
